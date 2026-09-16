@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairBook - Haircut Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✂️ HairBook</div>
+    <div class="profile">👤</div>
+</header>
+
+<main>
+
+    <section class="welcome">
+        <h1>Find Your Perfect Haircut</h1>
+        <p>Book your barber in just a few taps.</p>
+    </section>
+
+    <div class="search">
+        🔍
+        <input type="text" id="searchBox"
+               placeholder="Search salon...">
+    </div>
+
+    <h2>Nearby Salons</h2>
+
+    <div id="salonList">
+
+        <div class="salon">
+            <div class="salon-icon">✂️</div>
+
+            <div class="salon-info">
+                <h3>Sri Salon</h3>
+                <p>⭐ 4.5 • Santhosapuram</p>
+                <p>Men's Haircut • ₹150</p>
+            </div>
+
+            <button onclick="bookSalon('Sri Salon')">
+                BOOK
+            </button>
+        </div>
+
+
+        <div class="salon">
+            <div class="salon-icon">💈</div>
+
+            <div class="salon-info">
+                <h3>Style Studio</h3>
+                <p>⭐ 4.7 • Tambaram</p>
+                <p>Haircut • ₹200</p>
+            </div>
+
+            <button onclick="bookSalon('Style Studio')">
+                BOOK
+            </button>
+        </div>
+
+
+        <div class="salon">
+            <div class="salon-icon">💇</div>
+
+            <div class="salon-info">
+                <h3>Gentleman Cuts</h3>
+                <p>⭐ 4.6 • Medavakkam</p>
+                <p>Haircut • ₹180</p>
+            </div>
+
+            <button onclick="bookSalon('Gentleman Cuts')">
+                BOOK
+            </button>
+        </div>
+
+    </div>
+
+</main>
+
+<div id="bookingBox" class="booking-box">
+
+    <h2>Book Haircut</h2>
+
+    <p id="selectedSalon"></p>
+
+    <input type="text"
+           id="name"
+           placeholder="Your name">
+
+    <input type="tel"
+           id="phone"
+           placeholder="Phone number">
+
+    <label>Date</label>
+
+    <input type="date" id="date">
+
+    <label>Time</label>
+
+    <select id="time">
+
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>12:00 PM</option>
+        <option>01:00 PM</option>
+        <option>02:00 PM</option>
+        <option>03:00 PM</option>
+        <option>04:00 PM</option>
+        <option>05:00 PM</option>
+        <option>06:00 PM</option>
+        <option>07:00 PM</option>
+        <option>08:00 PM</option>
+
+    </select>
+
+    <button class="confirm"
+            onclick="confirmBooking()">
+        CONFIRM BOOKING
+    </button>
+
+    <button class="close"
+            onclick="closeBooking()">
+        CANCEL
+    </button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
