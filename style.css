@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile {
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.welcome {
+    background: #111;
+    color: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #ccc;
+}
+
+.search {
+    background: white;
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.salon {
+    background: white;
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.salon-icon {
+    width: 55px;
+    height: 55px;
+    background: #eee;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.salon-info {
+    flex: 1;
+}
+
+.salon-info h3 {
+    margin-bottom: 5px;
+}
+
+.salon-info p {
+    font-size: 13px;
+    color: #666;
+    margin-top: 3px;
+}
+
+.salon button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+.booking-box {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #555;
+    z-index: 100;
+}
+
+.booking-box h2 {
+    margin-bottom: 10px;
+}
+
+.booking-box input,
+.booking-box select {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.booking-box label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.confirm {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #eee;
+}
+
+@media (max-width: 400px) {
+    .welcome h1 {
+        font-size: 23px;
+    }
+
+    .salon {
+        padding: 12px;
+    }
+
+    .salon button {
+        padding: 8px 10px;
+    }
+}
