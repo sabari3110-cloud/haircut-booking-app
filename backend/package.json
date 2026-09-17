@@ -1,0 +1,12 @@
+{
+  "name": "hairbook-backend",
+  "version": "1.0.0",
+  "description": "Backend for HairBook haircut booking app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
