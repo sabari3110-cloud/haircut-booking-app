@@ -6,10 +6,10 @@
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
-    "mongodb": "^6.18.0"
-  },
   "engines": {
     "node": "20.x"
+  },
+  "dependencies": {
+    "mongodb": "^6.20.0"
   }
 }
